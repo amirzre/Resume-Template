@@ -69,3 +69,38 @@ p {
     font-size: 2.5rem;
   }
 }
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+a:hover {
+  color: var(--color-accent);
+  transition: 0.3s all ease-in-out;
+}
+
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.link-arrow::after {
+  content: ">";
+  margin-left: 0.5rem;
+  transition: margin 0.2s;
+}
+
+.link-arrow:hover::after {
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+}
+
