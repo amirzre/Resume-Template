@@ -4,6 +4,7 @@
   --color-secondary: rgba(255, 255, 255, 0.3);
   --color-accent: #bac964;
   --color-headings: #fff;
+  --color-card: #333;
 }
 
 *,
@@ -149,6 +150,35 @@ a:hover {
 .container {
   max-width: 750px;
   margin: 0 auto;
+}
+
+/* Icons */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+.icon--white {
+  fill: #fff;
+}
+
+.icon-container {
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Grids */
