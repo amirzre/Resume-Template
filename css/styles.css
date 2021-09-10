@@ -222,3 +222,41 @@ a:hover {
   font-weight: 100;
 }
 
+/* Cards */
+.card {
+  background: var(--color-card);
+  border-radius: 10px;
+  padding: 3rem;
+}
+
+.card__calendar {
+  color: #fff;
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.card__calendar::before {
+  content: "\e979"
+}
+
+.card__header {
+  color: var(--color-accent);
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.card__body {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  margin-top: 0;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.card__author {
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  font-weight: 200
+}
