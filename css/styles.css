@@ -63,6 +63,11 @@ li {
   list-style: none;
 }
 
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
 .menu li {
   display: inline-block;
   margin-right: 3.5rem;
@@ -152,6 +157,38 @@ a:hover {
   margin: 0 auto;
 }
 
+/* Collapsibles */
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
 /* Icons */
 .icon {
   width: 40px;
@@ -169,6 +206,10 @@ a:hover {
 
 .icon--white {
   fill: #fff;
+}
+
+.icon--dark {
+  fill: #000;
 }
 
 .icon-container {
@@ -276,3 +317,82 @@ a:hover {
 .card__resume {
   margin-top: 2.5rem;
 }
+
+/* Navigation Bar */
+.nav {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+  font-weight: 200;
+}
+
+.nav__item {
+  padding: 1.5rem 1rem;
+}
+
+.nav__item > a {
+  color: #000;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  color: #222;
+}
+
+.nav__toggler {
+  margin: 0.5rem 2rem;
+  opacity: 0.5;
+  transition: box-shadow 0.15s;
+  cursor: pointer;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0 0 0 3px #666;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    justify-content: center;
+    background: transparent;
+    padding: 2rem;
+  }
+
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    text-align: center;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav__item {
+    border: 0;
+    padding: 2rem 2.5rem;
+  }
+
+  .nav__item > a {
+    color: #fff;
+    transition: color 0.3s;
+  }
+
+  .nav__item > a:hover {
+    color: #fff;
+  }
+}
+
