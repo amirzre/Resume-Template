@@ -191,6 +191,11 @@ a:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
   }
+
+  .grid--3x2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -237,7 +242,7 @@ a:hover {
 }
 
 .card__calendar::before {
-  content: "\e979"
+  content: "\e979";
 }
 
 .card__header {
@@ -258,5 +263,16 @@ a:hover {
 .card__author {
   color: var(--color-secondary);
   font-size: 1.5rem;
-  font-weight: 200
+  font-weight: 200;
+}
+
+/* Resume */
+.resume__heading {
+  font-weight: 200;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.card__resume {
+  margin-top: 2.5rem;
 }
