@@ -582,3 +582,37 @@ a:hover {
     grid-gap: 3rem;
   }
 }
+
+/* Blog */
+.blog__card {
+  padding: 0;
+  margin-bottom: 3rem;
+  transition: 1s all ease;
+}
+
+.blog__card:hover {
+  position: relative;
+  bottom: 0.5rem;
+  
+}
+
+.blog__body {
+  padding: 3rem;
+  margin: 0;
+}
+
+.blog__heading {
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1rem;
+}
+
+.blog__description {
+  margin-top: 1.5rem;
+}
+
+.blog__info {
+  font-size: 1.4rem;
+  padding-right: 1rem;
+}
+
