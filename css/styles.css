@@ -60,6 +60,10 @@ h4 {
   font-weight: 800;
 }
 
+strong {
+  font-weight: 900;
+}
+
 p {
   margin-top: 0;
 }
@@ -593,7 +597,6 @@ a:hover {
 .blog__card:hover {
   position: relative;
   bottom: 0.5rem;
-  
 }
 
 .blog__body {
@@ -616,3 +619,58 @@ a:hover {
   padding-right: 1rem;
 }
 
+/* Contact */
+.contact__header {
+  font-weight: 300;
+  margin: 3rem 0;
+}
+.contact__form input,
+textarea {
+  width: 100%;
+  background: #333;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 3rem;
+}
+
+.contact__btn {
+  padding: 1.5rem;
+  letter-spacing: 4px;
+  margin-bottom: 4rem;
+}
+
+.contact__btn:hover {
+  background: #9daa55;
+}
+
+.contact__list {
+  padding: 0;
+}
+
+.contact__info {
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.contact_info_title {
+  display: block;
+  margin: 1rem 0;
+  color: #3a5979;
+  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-1x2-contact {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6rem;
+  }
+}
