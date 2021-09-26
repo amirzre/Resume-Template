@@ -674,3 +674,38 @@ textarea {
     grid-gap: 6rem;
   }
 }
+
+/* Footer */
+.footer__copyright {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  text-align: center;
+}
+.footer__media {
+  text-align: center;
+}
+
+.footer__icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: var(--color-accent);
+  background: var(--color-card);
+  position: relative;
+  margin: 10px;
+}
+
+.footer__icon span {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__icon span {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.4rem;
+  }
+}
