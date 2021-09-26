@@ -298,6 +298,7 @@ a:hover {
 /* Feature */
 .feature {
   text-align: center;
+  margin-top: 8rem;
 }
 
 .feature__title {
@@ -326,8 +327,9 @@ a:hover {
   font-weight: 700;
 }
 
-.card__calendar::before {
-  content: "\e979";
+.card__calendar p {
+  margin-left: 1rem;
+  display: inline;
 }
 
 .card__header {
@@ -370,6 +372,9 @@ a:hover {
   flex-wrap: wrap;
   padding: 0.5rem;
   align-items: center;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 .nav__list {
